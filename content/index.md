@@ -2,4 +2,4 @@
 title: 👋 Welcome
 ---
 
-Coming soon...
+## 1. [[Mapping the Frontend landscape]]
