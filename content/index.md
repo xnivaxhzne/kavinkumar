@@ -1,5 +1,5 @@
 ---
-title: 👋 Welcome
+title: 👋
 ---
 
-## 1. [[Mapping the Frontend landscape]]
+Coming soon...

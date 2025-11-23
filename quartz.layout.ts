@@ -23,7 +23,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ArticleTitle(),
     Component.ContentMeta({
-      showReadingTime: false
+      showReadingTime: false,
     }),
     Component.TagList(),
   ],
@@ -32,20 +32,20 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
+        // {
+        //   Component: Component.Search(),
+        //   grow: true,
+        // },
+        // { Component: Component.Darkmode() },
+        // { Component: Component.ReaderMode() },
       ],
     }),
     // Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    // Component.Graph(),
+    // Component.DesktopOnly(Component.TableOfContents()),
+    // Component.Backlinks(),
   ],
 }
 
@@ -57,10 +57,10 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
+        // {
+        //   Component: Component.Search(),
+        //   grow: true,
+        // },
         { Component: Component.Darkmode() },
       ],
     }),
