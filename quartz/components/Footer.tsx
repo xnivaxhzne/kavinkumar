@@ -1,15 +1,15 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/footer.scss"
-import { version } from "../../package.json"
-import { i18n } from "../i18n"
+// import { version } from "../../package.json"
+// import { i18n } from "../i18n"
 
 interface Options {
-  links: Record<string, string>
+  links: Record<string, { url: string; external: boolean }>
 }
 
 export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
-    const year = new Date().getFullYear()
+    // const year = new Date().getFullYear()
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
@@ -18,9 +18,15 @@ export default ((opts?: Options) => {
           <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
         </p> */}
         <ul>
-          {Object.entries(links).map(([text, link]) => (
+          {Object.entries(links).map(([text, { url, external }]) => (
             <li>
-              <a href={link}>{text}</a>
+              {external && (
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  {text}
+                  <span>↗</span>
+                </a>
+              )}
+              {!external && <a href={url}>{text}</a>}
             </li>
           ))}
         </ul>

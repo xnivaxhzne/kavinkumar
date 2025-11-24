@@ -1,5 +1,4 @@
 ---
 title: Welcome
+hideInRecents: "true"
 ---
-
-Coming soon...
