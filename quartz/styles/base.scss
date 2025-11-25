@@ -165,6 +165,7 @@ a {
   max-width: calc(#{map.get($breakpoints, desktop)} + 300px);
   margin: 0 auto;
   & article {
+    font-size: 1.125rem;
     & > h1 {
       font-size: 2rem;
     }
@@ -276,7 +277,7 @@ a {
 
     & .page-header {
       grid-area: grid-header;
-      margin: $topSpacing 0 0 0;
+      margin: $topSpacing 0 3rem 0;
       @media all and ($mobile) {
         margin-top: 0;
         padding: 0;

@@ -25,7 +25,7 @@ const config: QuartzConfig = {
       typography: {
         title: "Norican",
         header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        body: "Arial",
         code: "IBM Plex Mono",
       },
       colors: {
@@ -44,7 +44,7 @@ const config: QuartzConfig = {
           light: "#1e1f21",
           lightgray: "#393639",
           gray: "#646464",
-          darkgray: "#d4d4d4",
+          darkgray: "#c9c9c9",
           dark: "#ebebec",
           secondary: "#04b84c",
           tertiary: "#fff",
