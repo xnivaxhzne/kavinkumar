@@ -8,10 +8,10 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      x: {
-        url: "https://x.com/kavinkumar_nkl",
-        external: true,
-      },
+      // x: {
+      //   url: "https://x.com/kavinkumar_nkl",
+      //   external: true,
+      // },
       vision: {
         url: "/vision",
         external: false,
